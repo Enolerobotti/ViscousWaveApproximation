@@ -15,5 +15,5 @@ Please, see my article https://link.springer.com/article/10.1134/S10637842160701
 
 The data files are obtained from the Comsol Multiphisics software. They must have only two columns 'x' and 'v' and 8 lines of the header. The value in the 'x' column should start from 0. The sequence in the 'x' column may repeat several times starting from 0 every time. The data must be obtained in the time interval from nT to (n+1)T or from nT+T/2 to (n+1)T+T/2 where T is the period of wall oscillations, n is a natural number.
 
-Launch vw.py to begin.
+Launch vw.py to begin and try to load the cylinder__D_12.txt datafile.
 The program is interactive. You must specify the maximum number of iterations, the coefficient's initial values and its limits. Note, that the result mostly depends on the inital values.

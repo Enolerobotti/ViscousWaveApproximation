@@ -3,12 +3,15 @@ A nonlinear regression approach for my scientific problem. The approximation of 
 
 Approximation of viscous waves v1.0.
 Developed by Artem Pavlovskii
+
 October 2019.
 
 This is free software that is distributed under the GNU General Public Licence. You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation.
 
 We approximate data from numerical solution by dimensionless formula
+
 v = Re((exp((j-1)x) + A*exp(-jC)(1-exp((j-1)x))*exp(-Bx-jt)) 
+
 using the least squares and gradient descent methods. We denote by j the imaginary unit, by x the dimensionless coordinate and by t dimensionless time. The A, B and C are unknown coefficients which we will try to predict.
 Please, see my article https://link.springer.com/article/10.1134/S1063784216070185 for the details.
 

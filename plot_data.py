@@ -4,22 +4,15 @@ import warnings
 import matplotlib.cbook
 warnings.filterwarnings("ignore", category=matplotlib.cbook.mplDeprecation)
 
-try:
-    rc('text', usetex=True)
-    label_a = '$\\it{A}$'
-    label_b = '$\\it{B}$'
-    label_c = '$\\it{C}$'
-    label_x = '$\\it{x}$'
-    label_v = '$\\it{v}$'
-    label_t = '$\\it{\\tau/2\\pi}$'
-except RuntimeError:
-    print("Warning! LaTeX not found!")
-    label_a = 'A'
-    label_b = 'B'
-    label_c = 'C'
-    label_x = 'x'
-    label_v = 'v'
-    label_t = 't'
+#    rc('text', usetex=True)
+rc('ytick', labelsize=20)
+rc('xtick', labelsize=20)
+label_a = '$\\it{A}$'
+label_b = '$\\it{B}$'
+label_c = '$\\it{C}$'
+label_x = '$\\it{x}$'
+label_v = '$\\it{v}$'
+label_t = '$\\it{\\tau/2\\pi}$'
 
 
 def model_plot(iter_nums, a, b, c, graph_width=800, graph_height=600):
